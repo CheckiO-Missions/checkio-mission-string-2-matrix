@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    给您一串未排序的唯一（忽略大小写）小写和/或大写字母。请将其表示为从 "a "到 "y "的正方形排列字母的正确掩码（行大序）。掩码必须是一个 5x5 的整数矩阵，作为元组的元组，规则如下。
+    <ul>
+        <li>字符串中没有字符 - 在掩码中使用<code>0</code> ；</li>
+        <li>字符为小写 - 使用<code>1</code> ；</li>
+        <li>字符为大写 - 使用<code>2</code> 。</li>
+    </ul>
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}string-2-matrix.svg" alt="example" style="max-height: 250px"/>
+</p>
+
+<p style="text-align: justify;">
+    这里有一个反向转换的任务 -<a target="_blank" href="https://py.checkio.org/en/mission/matrix-2-string/">Matrix-2-String</a> 。
+</p>
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong>字符串 (<span>str{% if is_js %}ing{% endif %}</span>).
+</p>
+
+<p>
+   <strong>输出：</strong>由五个整数组成的元组 (<span>{% if is_js %}number{% else %}int{% endif %}</span>) 的五个元组。 
+</p>
+
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件</strong>
+    <ul>
+    <li><i>字符串中没有 "z"。</i></li>
+    </ul>
+</p>
