@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Sie erhalten eine unsortierte Zeichenkette aus eindeutigen (Groß- und Kleinschreibung ignorierenden) Klein- und/oder Großbuchstaben. Stellen Sie sie als eine korrekte Maske für die quadratisch angeordneten Buchstaben des Alphabets von "a" bis "y" dar (zeilenweise Anordnung). Die Maske muss eine 5x5-Matrix von ganzen Zahlen als Tupel von Tupeln mit der folgenden Regel sein.
+    <ul>
+        <li>zeichen ist nicht in der Zeichenkette vorhanden - verwenden Sie <code>0</code> in der Maske;</li>
+        <li>das Zeichen wird klein geschrieben - verwenden Sie <code>1</code>;</li>
+        <li>zeichen ist groß geschrieben - verwenden Sie <code>2</code>.</li>
+    </ul>
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}string-2-matrix.svg" alt="example" style="max-height: 250px"/>
+</p>
+
+<p style="text-align: justify;">
+    Hier ist ein Auftrag für eine umgekehrte Umwandlung - <a target="_blank" href="https://py.checkio.org/en/mission/matrix-2-string/">Matrix-2-String</a>.
+</p>
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zeichenkette (<span>str{% if is_js %}ing{% endif %}</span>).
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Tupel aus fünf Tupeln mit jeweils fünf ganzen Zahlen (<span>{% if is_js %}number{% else %}int{% endif %}</span>) jeweils. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingung:</strong>
+    <ul>
+    <li><i>kein "z" in der Zeichenkette.</i></li>
+    </ul>
+</p>
