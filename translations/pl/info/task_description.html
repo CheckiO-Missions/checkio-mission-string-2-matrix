@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Otrzymują Państwo nieposortowany ciąg unikalnych (ignorując wielkość liter) małych i/lub wielkich liter. Proszę przedstawić go jako poprawną maskę dla kwadratowo ułożonych liter alfabetu od "a" do "y" (kolejność rząd-dur). Maska musi być macierzą 5x5 liczb całkowitych jako krotka krotek z następującą regułą.
+    <ul>
+        <li>znak nie występuje w łańcuchu - proszę użyć <code>0</code> w masce;</li>
+        <li>znak jest pisany małymi literami - proszę użyć <code>1</code>;</li>
+        <li>znak jest pisany wielkimi literami - proszę użyć <code>2</code>.</li>
+    </ul>
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}string-2-matrix.svg" alt="example" style="max-height: 250px"/>
+</p>
+
+<p style="text-align: justify;">
+    Oto misja, aby dokonać odwróconej konwersji - <a target="_blank" href="https://py.checkio.org/en/mission/matrix-2-string/">Matrix-2-String</a>.
+</p>
+<!-- Explain input and output values -->
+<p>
+   <strong>Wejście:</strong> String (<span>str{% if is_js %}ing{% endif %}</span>).
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Krotka pięciu krotek po pięć liczb całkowitych (<span>{% if is_js %}number{% else %}int{% endif %}</span>) każda. 
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Warunek wstępny:</strong>
+    <ul>
+    <li><i>brak "z" w ciągu znaków.</i></li>
+    </ul>
+</p>
